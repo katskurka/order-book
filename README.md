@@ -38,3 +38,13 @@ For example, assume the book contains an order to buy 15 BTC at 6000. When we re
 The inverse however would not be true. Given a book with a buy 15 BTC at 5900, when we receive a sell order for 15 BTC at 6000 we should not fulfill this order since it would result in the seller getting less (5900 vs 6000).
 
 There are two tests associated with this extra created that are currently being skipped. Remove the `.skip` on these tests so they run when beginning this work.
+## Question Answers
+* **Identify the component of this assignment you did the best on, and why:** I broke this problem down much more than previous assignments, and created a visual flow chart of the inputs/outcomes for different conditions
+* **Describe in plain English what problem this assignment was posing, and what your solution to it was:** This problem gave a set of incoming buy and sell orders, and the objective was to either add an order to the order book when no matches were found, or fulfill buy/sell orders if an order existed that would meet the requirements of the incoming order. 
+* **What was your approach or process:** I first walked through what the problem was asking and tried to make a visual chart of the conditions. Then I tried to use that chart to create the function pieces
+* **What were your challenges:** I was able to pass the first four tests with very little issues, but I was having trouble structuring the function to correctly fulfill orders using multiple existing orders 
+* **What resources did you use:** Stackoverflow, MDN guides, JavaScript: the Definitive Guide, Hollis’ vaccine walkthrough
+* **What does the repo project do and what is the impact it has:** This repo receives and fulfills cryptocurrency orders
+* **Technologies used in project:** JavaScript, TDD, ESLint, Mocha, Chai
+* **Main Author:** Kat Skurka
+* **Credits:** Hollis Jamison
